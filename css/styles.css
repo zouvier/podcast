@@ -1,0 +1,280 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Chivo', sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #54E6AF;
+}
+
+h1 span {
+    color: white;
+}
+
+P {
+    color: #C2CBE5;
+    font-weight: 400;
+}
+.warning-inactive{
+    display: none;
+}
+
+
+.warning-active{
+    color: red;
+    position: absolute;
+    font-size: 0.75rem;
+    left: 1rem;
+    top: 4rem;
+}
+
+.forms{
+    position: relative;
+}
+
+.email-input{
+    position: relative;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    width: 100%;
+    padding-top: 3.563rem;
+    padding: 3.563rem 1.5rem 0 1.5rem;
+}
+
+body {
+    background-image: url("../assets/mobile/image-host.jpg");
+}
+
+.images {
+    display: flex;
+    align-content: center;
+    place-content: center;
+    gap: 1rem;
+}
+
+#email {
+    background: #2C344B;
+    border-radius: 1.75rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    border-style: none;
+    text-indent: 1rem;
+    width: 100%;
+    color: white;
+}
+
+.submit {
+    margin-top: 1rem;
+    border-radius: 1.75rem;
+    border-style: none;
+    width: 100%;
+    padding-top: 0.525rem;
+    padding-bottom: 0.525rem;
+    background-color: #54E6AF;
+}
+
+.submit:active, .submit:focus-visible{
+    background-color: #B3FFE2;
+    font-weight: 200;
+}
+
+
+@media (max-width: 767px) {
+    header {
+        display: flex;
+        background-color: rgba(18, 23, 37, 0.95);
+        place-content: center;
+        align-items: center;
+        padding-top: 4rem;
+    }
+
+    body {
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 1.625rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        place-items: center;
+        height: 100%;
+        background-color: rgba(18, 23, 37, 0.95);
+    }
+
+    .images2 {
+        max-height: 1rem;
+        max-width: 5.5rem;
+    }
+
+    #email{
+        margin-top: 1.4rem;
+    }
+
+
+    .submit {
+        margin-top: 1rem;
+        border-radius: 1.75rem;
+        border-style: none;
+        width: 100%;
+        background-color: #54E6AF;
+    }
+
+    .dots {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        height: 64rem;
+        background-repeat: no-repeat;
+        background-color: #121725;
+        background-position-x: right;
+    }
+    header{
+        padding-left: 8rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        place-content: center;
+
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.125rem;
+    }
+
+    .card {
+        text-align: left;
+        padding: 0;
+        margin-top: 16.125rem;
+        max-width: 39.688rem;
+        background-color: #121725;
+        gap: 2rem;
+    }
+
+    .dots {
+        padding-top: 9.563rem;
+    }
+
+    .forms {
+        position: relativ;
+    }
+
+    #email {
+        width: 70%;
+        padding-top: 0.725rem;
+        padding-bottom: 0.725rem;
+        margin-bottom: 4rem;
+    }
+
+    .submit {
+        position: relative;
+        width: fit-content;
+        
+        right: 8.7rem;
+    }
+
+    .images{
+        place-content:unset;
+    }
+
+}
+
+
+@media (min-width: 1025px)
+{   
+    header{
+        margin-top: 102px;
+        
+       
+    }
+    body{
+        background-image: url("../assets/desktop/image-host.jpg");
+        background-position-y: 8.125rem;
+        padding-left: 6rem;
+    }
+
+    .card{
+        margin-top: 5.5rem;
+        position: relative;
+        width:  45.188rem;
+        top: 5rem;
+        left: -14rem;
+    }
+
+    .dots{
+        position: absolute;
+        right: 0rem;
+        bottom: -9rem;
+    }
+    
+}
