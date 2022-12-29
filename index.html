@@ -22,27 +22,29 @@
         Apple Podcasts, Google Podcasts, Pocket Casts and more!
       </p>
 
-      
+
       <form class="forms" id="forms">
         <input type="email" id="email" name="email" placeholder="Email address">
         <p class="warning-inactive" aria-describedby="email">Oops! Please check your email</p>
         <label hidden for="email">Email Address</label>
         <button type="submit" class="submit" id="submit">Request access</button>
       </form>
-      
+
 
       <div class="images">
-        <img class="images2" src="./assets/desktop/spotify.svg">
-        <img class="images2" src="./assets/desktop/apple-podcast.svg">
-        <img class="images2" src="./assets/desktop/google-podcasts.svg">
-        <img class="images2" src="./assets/desktop/pocket-casts.svg">
+        <img class="images2" src="./assets/desktop/spotify.svg" aria-hidden="true">
+        <img class="images2" src="./assets/desktop/apple-podcast.svg" aria-hidden="true">
+        <img class="images2" src="./assets/desktop/google-podcasts.svg" aria-hidden="true">
+        <img class="images2" src="./assets/desktop/pocket-casts.svg" aria-hidden="true">
       </div>
     </article>
-    
+
   </main>
-  <div class="dots">
-    <img src="./assets/desktop/bg-pattern-dots.svg" alt="">
-  </div>
+  <footer>
+    <div class="dots" aria-hidden="true">
+      <img src="./assets/desktop/bg-pattern-dots.svg" alt="">
+    </div>
+  </footer>
   <script src="./script/form.js" async></script>
 </body>
 
