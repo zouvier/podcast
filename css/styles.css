@@ -215,7 +215,7 @@ body {
     .card {
         text-align: left;
         padding: 5.5rem 0 0 0 ;
-        margin-top: 16.125rem;
+        margin:  16.125rem 5.5rem 0 0;
         max-width: 39.688rem;
         background-color: #121725;
         gap: 2rem;
